@@ -1,0 +1,6 @@
+hub ClinGenHub
+shortLabel ClinGen Hub
+longLabel Clinical Genome Resource Hub for Gene-Disease Association Validity Data
+genomesFile genomes.txt
+email may_flowers@med.unc.edu
+descriptionUrl clingenhub.html
