@@ -1,0 +1,22 @@
+track ClinGenClass
+type bigBed 9 +
+shortLabel ClinGen Validity
+longLabel ClinGen Gene-Disease Classification Validity
+bigDataUrl ???
+html ???
+visibility pack
+dataVersion January 2020
+mouseOverField ???
+url https://search.clinicalgenome.org/kb/gene-validity/$$
+urlLabel Link to ClinGen Gene Validity Classification Summary:
+urls ??
+skipFields ???
+sepFields ??
+itemRgb on
+labelOnFeature on??
+noScoreFilter on
+searchIndex ???
+filter VERY USEFUL LOOK INTO MORE
+filterText SEE ABOVE
+filterValues SEE ABOVE
+bedNameLabel Associated Disease
