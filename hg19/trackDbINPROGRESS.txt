@@ -2,21 +2,19 @@ track ClinGenClass
 type bigBed 9 +
 shortLabel ClinGen Validity
 longLabel ClinGen Gene-Disease Classification Validity
-bigDataUrl ???
-html ???
+bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg19/hg19ClinGenBigBed.bb
 visibility pack
-dataVersion January 2020
-mouseOverField ???
-url https://search.clinicalgenome.org/kb/gene-validity/$$
-urlLabel Link to ClinGen Gene Validity Classification Summary:
-urls ??
-skipFields ???
-sepFields ??
+dataVersion February 2020
+mouseOverField geneSymbol
+urls ClinGenURL="https://search.clinicalgenome.org/kb/gene-validity/$$" HGNCid="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$$" MONDOid="http://purl.obolibrary.org/obo/$$"
+skipFields score,strand,thickStart,thickEnd
+sepFields HGNCid,MONDOid
 itemRgb on
-labelOnFeature on??
+labelOnFeature on
 noScoreFilter on
-searchIndex ???
-filter VERY USEFUL LOOK INTO MORE
-filterText SEE ABOVE
-filterValues SEE ABOVE
+searchIndex name,geneSymbol,HGNCid,MONDOid,Classification
+filterValues.SOPversion SOP4,SOP5,SOP6,SOP7
+filterLabel.SOPversion ClinGen SOP Version Number
+filterValues.Classification Definitive,Strong,Moderate,Limited,Disputed,Refuted,No Reported Evidence
+filterLabel.Classification ClinGen Gene-Disease Clinical Validity Classification
 bedNameLabel Associated Disease
