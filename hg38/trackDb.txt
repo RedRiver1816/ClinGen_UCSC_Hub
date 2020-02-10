@@ -1,1 +1,19 @@
-
+track ClinGenClass
+type bigBed 9 +
+shortLabel ClinGen Validity
+longLabel ClinGen Gene-Disease Classification Validity
+bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg38/hg38ClinGenBigBed.bb
+visibility pack
+dataVersion February 2020
+mouseOverField geneSymbol
+urls ClinGenURL="https://search.clinicalgenome.org/kb/gene-validity/$$" HGNCid="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$$" MONDOid="http://purl.obolibrary.org/obo/$$"
+skipFields score,strand,thickStart,thickEnd
+sepFields MONDOid,SOPversion
+itemRgb on
+noScoreFilter on
+searchIndex name,geneSymbol,HGNCid,MONDOid,Classification
+filterValues.SOPversion SOP4,SOP5,SOP6,SOP7
+filterLabel.SOPversion ClinGen SOP Version Number
+filterValues.Classification Definitive,Strong,Moderate,Limited,Disputed,Refuted,No Reported Evidence
+filterLabel.Classification ClinGen Gene-Disease Clinical Validity Classification
+bedNameLabel Associated Disease
