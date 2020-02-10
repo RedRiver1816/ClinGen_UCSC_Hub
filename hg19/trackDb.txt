@@ -8,9 +8,8 @@ dataVersion February 2020
 mouseOverField geneSymbol
 urls ClinGenURL="https://search.clinicalgenome.org/kb/gene-validity/$$" HGNCid="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$$" MONDOid="http://purl.obolibrary.org/obo/$$"
 skipFields score,strand,thickStart,thickEnd
-sepFields MONDOid
+sepFields MONDOid,SOPversion
 itemRgb on
-labelOnFeature on
 noScoreFilter on
 searchIndex name,geneSymbol,HGNCid,MONDOid,Classification
 filterValues.SOPversion SOP4,SOP5,SOP6,SOP7
