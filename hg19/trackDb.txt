@@ -3,6 +3,7 @@ type bigBed 9 +
 shortLabel ClinGen Validity
 longLabel ClinGen Gene-Disease Classification Validity
 bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg19/hg19ClinGenBigBed.bb
+html https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hubhtml.html
 visibility pack
 dataVersion February 2020
 mouseOverField geneSymbol
