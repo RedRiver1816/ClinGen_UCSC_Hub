@@ -1,0 +1,78 @@
+<H2>Description</H2>
+<P>
+The 
+<a href="http://www.clinicalgenome.org/" target="_BLANK">
+<b><i>Clinical Genome Resource</i></b></a>, or <i>ClinGen</i>, is a National Institutes of Health (NIH)-funded resource dedicated to building an authoritative 
+central resource that defines the clinical relevance of genes and variants for use in precision medicine and research. 
+Specifically, <i>ClinGen</i> uses data from patients, clinicians, laboratories, and researchers in order to answer questions
+regarding the clinical validity of gene-disease relationships, the pathogenicity of any given variant in a gene, and whether
+this information is actionable. This information is freely available and searchable for any member of the public. </P>
+<P>
+This track provides the user with a variety of data related to the <i>ClinGen</i> Gene-Disease Validity Curations. To get
+information on a gene-disease classification, click it and follow the links provided for more information on both the gene and
+disease indidivually as well as the classification summary. Information provided includes the 
+<a href="http://www.genenames.org/" target="_BLANK">GeneNames</a>
+ gene details page and the 
+<a href="http://obofoundry.org/ontology/mondo.html" target="_BLANK">Monarch Disease Ontology</a>
+ page as well as the <i>ClinGen</i> SOP version, Gene-Disease Validity Ranking, and an evidence summary detailing the 
+ranking, all explained below.
+</P>
+<H2>Display Conventions and Configuration</H2>
+<P>
+<i>ClinGen</i> Gene-Disease Validity Curations are based on a framework that provides a semiqualitative measurement for the strength 
+of evidence of a gene-disease relationship that correlates to a qualitative classification: "Definitive," "Strong," "Moderate," "Limited," 
+"No Reported Evidence," "Disputed," or "Refuted." These classifications are labeled with the disease entity and hovering over the features
+shows the associated gene. They are color coded based on the strength of their classification as provided below:
+</P>
+<table>
+  <thead>
+  <tr>
+    <th style="border-bottom: 2px solid #6678B1;">Color</th>
+    <th style="border-bottom: 2px solid #6678B1;">Classifications</th>
+  </tr>
+  </thead>
+  <tbody><tr>
+    <th bgcolor="#000066"></th>
+    <td align="left"><b>Definitive:</b> The role of this gene in this particular disease has been repeatedly demonstrated and has been upheld over time</td>
+  </tr>
+  <tr>
+    <th bgcolor="#0000FF"></th>
+    <td align="left"><b>Strong:</b> The role of this gene in disease has been independently demonstrated typically in at least two separate studies, including both strong variant-level evidence in unrelated probands and compelling gene-level evidence from experimental data</td>
+  </tr>
+  <tr>
+    <th bgcolor="#3333FF"></th>
+    <td align="left"><b>Moderate:</b> There is moderate evidence to support a causal role for this gene in this disease, typically including both several probands with variants and moderate experimental data supporting the gene-disease assertion</td>
+  </tr>
+  <tr>
+    <th bgcolor="#9999FF"></th>
+    <td align="left"><b>Limited:</b> There is limited evidence to support a causal role for this gene in this disease, such as few probands with variants and limited experimental data supporting the gene-disease assertion</td>
+  </tr>
+  <tr>
+    <th bgcolor="#000000"></th>
+    <td align="left"><b>No Reported Evidence:</b> Evidence for a causal role in disease has not been reported</td>
+  </tr>
+  <tr>
+    <th bgcolor="#FF9933"></th>
+    <td align="left"><b>Disputed:</b> Conflicting evidence disputing a role for this gene in this disease has arisen since the initial report identifying an association between the gene and disease</td>
+  </tr>
+  <tr>
+    <th bgcolor="#FF3333"></th>
+    <td align="left"><b>Refuted:</b> Evidence refuting the role of the gene in the specified disease has been reported and significantly outweighs any evidence supporting the role</td>
+  </tr>
+</tbody></table>
+<P>
+The version of the <i>ClinGen</i> Standard Operating Procedures that each gene-disease classification was performed with is provided 
+as well. An older or newer SOP version does not necessarily mean the classification is any more or less valid but is provided for clarity. 
+Each details page also contains a direct link to an evidence summary detailing the rationale behind the specific classification and information 
+such as a breakdown of the semiquantitative framework, relevant PubMed IDs, the type of data (Genetic vs Experimental Evidence), and a detailed summary.
+</P>
+<H2>Methods</H2>
+<p>
+The Gene Validity Curations summary was <a href="https://search.clinicalgenome.org/kb/gene-validity/" target="_BLANK">downloaded</a> and manually converted 
+to a BED file. The list of genes was submitted to the Genome Browser's Table Browser NCBI Refseq Predicted track for hg19 and hg38 with the longest transcript being 
+chosen as the relevant genomic region. This information was incorporated into the BED file and converted to a bigBed file with the UCSC genome browser tool bedToBigBed. 
+This hub is manually updated within the first few days of each calendar month.
+</p>
+<H2>References</H2>
+<p>
+Strande NT, Riggs ER, Buchanan AH, et al. Evaluating the Clinical Validity of Gene-Disease Associations: An Evidence-Based Framework Developed by the Clinical Genome Resource. <i>Am J Hum Genet.</i> 2017;100(6):895–906. doi:10.1016/j.ajhg.2017.04.015</p>
