@@ -1,20 +1,20 @@
 track ClinGenClass
 type bigBed 9 +
 shortLabel ClinGen Validity
-longLabel ClinGen Gene-Disease Classification Validity
+longLabel ClinGen Gene-Disease Validity Classification
 bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg38/hg38ClinGenBigBed.bb
 html https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hubhtml.html
 visibility pack
 dataVersion February 2020
-mouseOverField geneSymbol
-urls ClinGenURL="https://search.clinicalgenome.org/kb/gene-validity/$$" HGNCid="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$$" MONDOid="http://purl.obolibrary.org/obo/$$"
-skipFields score,strand,thickStart,thickEnd
+mouseOverField Mouseover
+urls ClinGenURL="https://search.clinicalgenome.org/kb/gene-validity/$$" HGNCid="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$$" MONDOid="https://monarchinitiative.org/disease/$$"
+skipFields score,strand,thickStart,thickEnd,Mouseover
 sepFields MONDOid,SOPversion
 itemRgb on
 noScoreFilter on
 searchIndex name,geneSymbol,HGNCid,MONDOid,Classification
 filterValues.SOPversion SOP4,SOP5,SOP6,SOP7
 filterLabel.SOPversion ClinGen SOP Version Number
-filterValues.Classification Definitive,Strong,Moderate,Limited,Disputed,Refuted,No Reported Evidence
-filterLabel.Classification ClinGen Gene-Disease Clinical Validity Classification
+filterValues.Classification Definitive,Strong,Moderate,Limited,Animal Model Only,No Reported Evidence,Disputed,Refuted
+filterLabel.Classification ClinGen Gene-Disease Validity Classification
 bedNameLabel Associated Disease
