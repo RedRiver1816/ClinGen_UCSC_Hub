@@ -2,7 +2,7 @@ track ClinGenClass
 type bigBed 9 +
 shortLabel ClinGen Validity
 longLabel ClinGen Gene-Disease Validity Classification
-bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg19/hg19ClinGenBigBed.bb
+bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg19/hg19ClinGenBigBed2.bb
 html https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hubhtml.html
 visibility pack
 dataVersion February 2020
@@ -13,6 +13,8 @@ sepFields MONDOid,SOPversion
 itemRgb on
 noScoreFilter on
 searchIndex name,geneSymbol,HGNCid,MONDOid,Classification
+filterValues.Inheritance Autosomal Dominant,Autosomal Recessive,Semidominant,X-Linked,X-linked recessive,Other
+filterLabel.Inheritance Inheritance Pattern
 filterValues.SOPversion SOP4,SOP5,SOP6,SOP7
 filterLabel.SOPversion ClinGen SOP Version Number
 filterValues.Classification Definitive,Strong,Moderate,Limited,Animal Model Only,No Reported Evidence,Disputed,Refuted
