@@ -2,7 +2,7 @@ track ClinGenClass
 type bigBed 9 +
 shortLabel ClinGen Validity
 longLabel ClinGen Gene-Disease Validity Classification
-bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg38/hg38ClinGenBigBed2.bb
+bigDataUrl https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hg38/hg38ClinGenBigBed.bb
 html https://raw.githubusercontent.com/RedRiver1816/ClinGen_UCSC_Hub/master/hubhtml.html
 visibility pack
 dataVersion February 2020
