@@ -36,11 +36,12 @@ hg19rawdata = hg19raw.json()
 transdata = pd.DataFrame(index=range(5000),columns = ['chrom','txStart','txEnd','GENE SYMBOL'])
 row = 0
 
-for gene in hg19rawdata['ncbiRefSeqCurated']['chr1']:
-    if '_' not in gene['chrom']:
-        if gene['name2'] in clingen['GENE SYMBOL'].unique():
-            transdata.iloc[row] = [gene['chrom'],gene['txStart'],gene['txEnd'],gene['name2']]
-            row += 1
+for chrom in hg19rawdata['ncbiRefSeqCurated']:
+    if '_' not in chrom:
+        for gene in hg19rawdata['ncbiRefSeqCurated'][chrom]:
+            if gene['name2'] in clingen['GENE SYMBOL'].unique():
+                transdata.iloc[row] = [gene['chrom'],gene['txStart'],gene['txEnd'],gene['name2']]
+                row += 1
             
 #filter data for longest unique transcripts for each gene            
 
@@ -72,11 +73,12 @@ hg38rawdata = hg38raw.json()
 transdata = pd.DataFrame(index=range(5000),columns = ['chrom','txStart','txEnd','GENE SYMBOL'])
 row = 0
 
-for gene in hg38rawdata['ncbiRefSeqCurated']['chr1']:
-    if '_' not in gene['chrom']:
-        if gene['name2'] in clingen['GENE SYMBOL'].unique():
-            transdata.iloc[row] = [gene['chrom'],gene['txStart'],gene['txEnd'],gene['name2']]
-            row += 1
+for chrom in hg38rawdata['ncbiRefSeqCurated']:
+    if '_' not in chrom:
+        for gene in hg38rawdata['ncbiRefSeqCurated'][chrom]:
+            if gene['name2'] in clingen['GENE SYMBOL'].unique():
+                transdata.iloc[row] = [gene['chrom'],gene['txStart'],gene['txEnd'],gene['name2']]
+                row += 1
             
 #filter data for longest unique transcripts for each gene            
 
